@@ -75,7 +75,7 @@ new_words.sort()
 print(new_words)
 
 # w writes strings, newline = '' => no newline
-with open('res.txt', 'w', newline='') as out:
+with open('res.txt', 'w',newline = '') as out:
     csv_out = csv.writer(out)
     for row in new_words:
         csv_out.writerow(row)
@@ -107,6 +107,9 @@ print(new_list_amount-new_vocab_amount)
 print(new_vocab_amount)
 
 plt.show()
+
+# jetzt fehlt nur noch: go through list, put each row in clipboard, so it gets pasted to clipboard insert page.
+# user can now manually add suitable vocabulary with yomichan!!
 
 # def main():
 #     pass
