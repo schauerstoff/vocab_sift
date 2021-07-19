@@ -1,8 +1,15 @@
 # vocab_sift
 Compare lists of new words to your database and sift out all the duplicates!
 
-Also get some stats and see how much you know already. 
-There will be an option to manually go through the remaining vocab and add them to Anki in a yomichan-style (only japanese).
-Using a controller is recommended. (Black background, audio should be played while deciding y/n to add to anki)
+Useful for:
+    - merging anki decks
+    - comparing your vocabulary to a vocabulary list (e.g. for test-preparation-purposes) and get stats displayed
 
-Idea 4 stats-> how many new kanji even
+Consists of:
+    1. automatic_sift.py:  returns {∀ word ∈ {vocabulary_list} | ¬ (word ∈ {database})}
+    2. manual_sift.py:  Use the result from 1. to manually sort the rest in three categories
+                        - Study (and add to Anki)
+                        - Later (low hanging fruit only)
+                        - Drop (e.g. when word is already known)
+
+#stats: how many new kanji mayb

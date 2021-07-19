@@ -4,15 +4,15 @@ import csv
 # Manually go though list with yomichan and select your new vocabulary!
 
 
-data_path = 'res.txt'
+data_path = 'anki1.txt'
 kanji_pos = 0
 english_pos = 1
 
 
 new_words = []
 
-file = open(data_path)  # result from vocab_sift is not encoding='utf-8'
-data = csv.reader(file, delimiter=",")
+file = open(data_path) 
+data = csv.reader(file, delimiter="\t")
 
 
 for row in data:
