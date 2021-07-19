@@ -75,7 +75,7 @@ new_words.sort()
 print(new_words)
 
 # w writes strings, newline = '' => no newline
-with open('res.txt', 'w',newline = '') as out:
+with open('res.txt', 'w', newline='') as out:
     csv_out = csv.writer(out)
     for row in new_words:
         csv_out.writerow(row)
