@@ -16,10 +16,10 @@ data = csv.reader(file, delimiter=",")
 
 
 for row in data:
-    print(row[kanji_pos] + '\t' + row[english_pos])
+    print(row[english_pos] + '\t' + row[kanji_pos])
     # format: #"<div class="line_box"><span>あくび&nbsp;&nbsp; &nbsp;yawn</span></div>"
     new_words.append('<div class="line_box"><span>' +
-                     row[kanji_pos] + '&nbsp;&nbsp; &nbsp;' + row[english_pos] + '</span></div>')
+                     row[english_pos] + '\t' + '\t' + '\t' + '&nbsp;&nbsp; &nbsp;' + row[kanji_pos] + '</span></div>')
 
 file.close()
 
